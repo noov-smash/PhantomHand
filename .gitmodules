@@ -1,0 +1,6 @@
+[submodule "react"]
+	path = react
+	url = https://github.com/noov-smash/masterhand-web.git
+[submodule "arduino"]
+	path = arduino
+	url = https://github.com/noov-smash/masterhand-arduino.git
