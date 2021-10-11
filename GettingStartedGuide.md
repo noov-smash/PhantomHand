@@ -155,7 +155,7 @@ Finally, click on the arrow button to write the sketch.
 If you see "Writing to the board is complete" at the bottom of the screen, you are finally finished.   
 Congratulations!  
   
-<img width="840" alt="Screenshot 2021-10-11 23 32 54" src="https://user-images.githubusercontent.com/83855713/136808906-17a1c70c-20e5-4a73-8789-b8631dd6b58d.png">
+<img width="840" alt="Screenshot 2021-10-11 23 32 54" src="https://user-images.githubusercontent.com/83855713/136845295-42486996-a199-4573-962c-71bf7c9ee87f.png">
 
 ## 🔌 Connecting the device
 
