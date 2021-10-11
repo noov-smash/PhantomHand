@@ -1,9 +1,12 @@
 # 🕹 PhantomHand
-Control and automate Nintendo Switch from a browser. A tool developed with React and Arduino.
+  
+[日本語](https://zenn.dev/noov/articles/d7d9f448941ec6)  
+  
+Control and automate Nintendo Switch from a browser. A tool developed with React and Arduino.  
 
 ## 🚀 Introduction
 **PhantomHand** is a tool that allows you to control and automate your Nintendo Switch from your browser.
-If you just want to know how to use it quickly, please see the **Getting Started Guide**.
+If you just want to know how to use it quickly, please see the **[Getting Started Guide](/GettingStartedGuide.md)**.
 
 #### Repository
 <https://github.com/noov-smash/PhantomHand>
@@ -11,13 +14,13 @@ If you just want to know how to use it quickly, please see the **Getting Started
 #### DEMO
 <https://phantomhand.netlify.app/>
 
- <font color="Red">Warning: _The content of this repository does not contain any illegal activities such as uploading modified firmware, but it may fall under the Nintendo Switch Terms of Service. Please use at your own risk._</font>
+ <font color="Red">⚠️ The content of this repository does not contain any illegal activities such as uploading modified firmware, but it may fall under the Nintendo Switch Terms of Service. Please use at your own risk.</font>
 
 
 ## 💡 Overview
 Briefly, this is a web application for the NintendoSwitch macro controller.
   
-<img width="640" alt="spec" src="https://user-images.githubusercontent.com/83855713/136757401-a9f6d115-8f24-4d7f-aa9d-1b90bfdacdbb.gif">
+<img width="840" alt="spec" src="https://user-images.githubusercontent.com/83855713/136757401-a9f6d115-8f24-4d7f-aa9d-1b90bfdacdbb.gif">
   
 Specifically, it will have the following functionality: with React and Arduino.  
 - Operate the Switch in the browser GUI
@@ -31,16 +34,16 @@ The differences from the macro tools created by the great pioneers are as follow
 - Can be connected via Bluetooth
 - Can be used for Smash Bros (most important!)
   
-## ⚙️ Function Description
+## ⚙️  Function Description
   
 ### Create Macro
-<img width="640" alt="create" src="https://user-images.githubusercontent.com/83855713/136768549-5ab07e19-dd22-4ef6-9056-392a62ecc695.gif">
+<img width="840" alt="create" src="https://user-images.githubusercontent.com/83855713/136768549-5ab07e19-dd22-4ef6-9056-392a62ecc695.gif">
   
 You can save commands entered in the browser GUI as macros.  
 If you connect a pro-controller to your PC, you can also create macros by operating the pro-controller.  
   
 ### Play macro
-<img width="640" alt="play" src="https://user-images.githubusercontent.com/83855713/136768796-ec36282c-b0d8-472d-a3e6-290486553a52.gif">
+<img width="840" alt="play" src="https://user-images.githubusercontent.com/83855713/136768796-ec36282c-b0d8-472d-a3e6-290486553a52.gif">
   
 Recall saved macros with the browser GUI.
 Unlimited number of macros can be saved, and the macro command to be called can be changed with a single click.
@@ -48,13 +51,13 @@ Repeating playback is also supported.
   
 ## 📦 Devices required
 - Arduino Leonard (Atmega32u4)
-- BLE Serial Device (CC2640R2F) or USB Serial Device (FT232)
+- BLE Serial Device (CC2840R2F) or USB Serial Device (FT232)
 - Jumper wire
   
-Please see the **Getting Started Guide** for installation instructions.  
+Please see the **[Getting Started Guide](/GettingStartedGuide.md)** for installation instructions.  
   
 ## 🛠  Specifications
-<img width="640" alt="spec" src="https://user-images.githubusercontent.com/83855713/136764272-de212543-ca13-430f-b33f-2b652e42f7a1.png">
+<img width="840" alt="spec" src="https://user-images.githubusercontent.com/83855713/136764272-de212543-ca13-430f-b33f-2b652e42f7a1.png">
   
 ### Arduino
 **The Arduino Leonardo** microcontroller will allow you to control the Switch remotely.The Arduino Leonardo contains the ATmega 32U4 chip.  
@@ -77,7 +80,7 @@ Serial communication was adopted to link the browser and Arduino Leonardo. contr
 ##### Uint8Array and JSON
 The controller operation signals are sent to the Arduino as an 8-bit binary data array. The length of the array is 2, and its contents are the identifiers of the controller's buttons and sticks (0 - 21) and the state of the buttons and sticks (0 or 1, 0 - 255).  
   
-<img width="640" alt="spec" src="https://user-images.githubusercontent.com/83855713/136764816-69109eae-ad6c-4323-a778-3f6e210e5254.png">
+<img width="840" alt="spec" src="https://user-images.githubusercontent.com/83855713/136764816-69109eae-ad6c-4323-a778-3f6e210e5254.png">
   
 In order to realize the macro function, in addition to the binary sent to the Arduino, the time data of "how many seconds after the start will that command fire" is added and saved as JSON.
 
@@ -98,6 +101,9 @@ When you connect the pro-controller to your PC via Bluetooth or USB, you can pla
 
 
 #### Share command function
+  
+![share](https://user-images.githubusercontent.com/83855713/136824402-8b938aed-c7c8-49d0-9475-19879e537ec9.gif)
+  
 Use Rison to embed JSON in the query parameter of a URL. When that URL is shared, anyone who accesses it can emulate that command on Switch by simply pressing the play button. It will be interesting to see if this catches on.  
   
 To avoid reaching Twitter's character limit with overly long URLs, a URL shortening service called Bitly was used.  (It's a free service, so you may reach the limit soon.  
@@ -108,7 +114,7 @@ To avoid reaching Twitter's character limit with overly long URLs, a URL shorten
 ## 🎮  DEMO
 Here's the React project deployed on Netlify.  
 You can experience the demo by connecting to an Arduino with a program written on it.  
-For more information on how to build an Arduino, please refer to the Getting Started Guide.  
+For more information on how to build an Arduino, please refer to the [Getting Started Guide](/GettingStartedGuide.md).  
   
 <https://phantomhand.netlify.app/>
 
@@ -124,19 +130,19 @@ If you are a game peripheral manufacturer interested in mass production, please 
 Here is a list of articles and other Switch automation ideas that I found useful. If you're interested in Switch automation after reading this article, I hope you'll explore the various ways to automate your Switch!
 
 ### Joycontrol
-This method uses a Python library called Joycontrol, which sends the controller signal via Bluetooth, so there is no need to attach a device to the Switch. It's revolutionary.
+This method uses a Python library called Joycontrol, which sends the controller signal via Bluetooth, so there is no need to attach a device to the Switch. It's revolutionary.  
 <https://github.com/mart1nro/joycontrol>
 
 ### ESP-32
-ESP-32 is a microcontroller module with built-in WiFi and Bluetooth.
+ESP-32 is a microcontroller module with built-in WiFi and Bluetooth.  
 <https://github.com/mizuyoukanao/UARTSwitchCon>
 
 ### Local Network, WebSocket, OSC, etc.
-<img width="640" alt="esp8226" src="https://user-images.githubusercontent.com/83855713/136765979-b8932571-d4b6-4da0-91a1-9afd915ed501.png">
+<img width="840" alt="esp8226" src="https://user-images.githubusercontent.com/83855713/136765979-b8932571-d4b6-4da0-91a1-9afd915ed501.png">
   
-There are several Arduino microcontrollers (Atmega32u4) with the ESP8266 WiFi module, which can be used to turn itself into a server, or connected to WiFi to turn it into an IoT device.
+There are several Arduino microcontrollers (Atmega32u4) with the ESP8266 WiFi module, which can be used to turn itself into a server, or connected to WiFi to turn it into an IoT device.  
   
 <https://ja.aliexpress.com/i/32839674193.html>
 
-If you connect this to the Switch, you can control it from outside the house. .... It seems like it could be used for a lot of interesting things. I think this idea has the most potential for development.
+If you connect this to the Switch, you can control it from outside the house. .... It seems like it could be used for a lot of interesting things. I think this idea has the most potential for development.  
   
