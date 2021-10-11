@@ -223,7 +223,7 @@ When using **CC2640R2F (wireless module)**, the following items should also be s
 Here are the instructions for using **PhantomHand**.  
 First, please visit the site.  
   
-<https://phantomhand.netlify.app/>
+<https://phantom-hand.web.app/>
   
 
 Click on the purple button.  

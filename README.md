@@ -12,7 +12,7 @@ If you just want to know how to use it quickly, please see the **[Getting Starte
 <https://github.com/noov-smash/PhantomHand>
 
 #### DEMO
-<https://phantomhand.netlify.app/>
+<https://phantom-hand.web.app/>
 
  <font color="Red">⚠️ The content of this repository does not contain any illegal activities such as uploading modified firmware, but it may fall under the Nintendo Switch Terms of Service. Please use at your own risk.</font>
 
@@ -112,20 +112,18 @@ To avoid reaching Twitter's character limit with overly long URLs, a URL shorten
 <https://www.npmjs.com/package/rison>
 
 ## 🎮  DEMO
-Here's the React project deployed on Netlify.  
+Here's the React project deployed on Firebase.  
 You can experience the demo by connecting to an Arduino with a program written on it.  
 For more information on how to build an Arduino, please refer to the [Getting Started Guide](/GettingStartedGuide.md).  
   
-<https://phantomhand.netlify.app/>
+<https://phantom-hand.web.app/>
 
 ## 🛌 Conclusion
 I've been testing it myself for about a week, and I've made surprisingly good progress in practicing Smash Bros. I'm sure that Pokémon and RPG enthusiasts will be happy with it. If there seems to be a reasonable demand for it, I'm interested in commercializing it.  
   
 However, I have almost no knowledge of hardware mass production, so it will take time.  
-If you are a game peripheral manufacturer interested in mass production, please send me a direct message.  
-<https://twitter.com/intent/user?user_id=1295277787293446145>
-
-
+If you are a game peripheral manufacturer interested in mass production, please send [me](https://twitter.com/intent/user?user_id=1295277787293446145) a direct message.  
+  
 ## 📚 Appendix
 Here is a list of articles and other Switch automation ideas that I found useful. If you're interested in Switch automation after reading this article, I hope you'll explore the various ways to automate your Switch!
 
