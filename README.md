@@ -8,9 +8,11 @@ Control and automate Nintendo Switch from a browser. A tool developed with React
 **PhantomHand** is a tool that allows you to control and automate your Nintendo Switch from your browser.
 If you just want to know how to use it quickly, please see the **[Getting Started Guide](/GettingStartedGuide.md)**.
 
-#### Repository
-<https://github.com/noov-smash/PhantomHand>
+#### Repositories
+- [PhantomHand-React](https://github.com/noov-smash/PhantomHand-React)
+- [PhantomHand-Arduino](https://github.com/noov-smash/PhantomHand-Arduino)
 
+    
 #### DEMO
 <https://phantom-hand.web.app/>
 
