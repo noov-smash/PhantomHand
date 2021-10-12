@@ -98,10 +98,10 @@ The browser GUI is not suitable for creating commands for games with complex ope
   
 When you connect the pro-controller to your PC via Bluetooth or USB, you can play the game as if it were directly connected to the Switch while still going through JavaScript and Arduino.  
   
-<https://developer.mozilla.org/ja/docs/Web/API/Gamepad_API/Using_the_Gamepad_API>
-<https://www.npmjs.com/package/react-gamepad>
-
-
+<https://developer.mozilla.org/ja/docs/Web/API/Gamepad_API/Using_the_Gamepad_API>  
+<https://www.npmjs.com/package/react-gamepad>  
+  
+  
 #### Share command function
   
 ![share](https://user-images.githubusercontent.com/83855713/136824402-8b938aed-c7c8-49d0-9475-19879e537ec9.gif)
@@ -110,16 +110,16 @@ Use Rison to embed JSON in the query parameter of a URL. When that URL is shared
   
 To avoid reaching Twitter's character limit with overly long URLs, a URL shortening service called Bitly was used.  (It's a free service, so you may reach the limit soon.  
   
-<https://app.bitly.com/Bl9miVlf2zr/bitlinks/3AUZ7PB>
-<https://www.npmjs.com/package/rison>
-
+<https://app.bitly.com/Bl9miVlf2zr/bitlinks/3AUZ7PB>  
+<https://www.npmjs.com/package/rison>  
+  
 ## 🎮  DEMO
 Here's the React project deployed on Firebase.  
 You can experience the demo by connecting to an Arduino with a program written on it.  
 For more information on how to build an Arduino, please refer to the [Getting Started Guide](/GettingStartedGuide.md).  
   
 <https://phantom-hand.web.app/>
-
+  
 ## 🛌 Conclusion
 I've been testing it myself for about a week, and I've made surprisingly good progress in practicing Smash Bros. I'm sure that Pokémon and RPG enthusiasts will be happy with it. If there seems to be a reasonable demand for it, I'm interested in commercializing it.  
   
@@ -131,18 +131,18 @@ Here is a list of articles and other Switch automation ideas that I found useful
 
 ### Joycontrol
 This method uses a Python library called Joycontrol, which sends the controller signal via Bluetooth, so there is no need to attach a device to the Switch. It's revolutionary.  
-<https://github.com/mart1nro/joycontrol>
+<https://github.com/mart1nro/joycontrol>  
 
 ### ESP-32
 ESP-32 is a microcontroller module with built-in WiFi and Bluetooth.  
-<https://github.com/mizuyoukanao/UARTSwitchCon>
+<https://github.com/mizuyoukanao/UARTSwitchCon>  
 
 ### Local Network, WebSocket, OSC, etc.
 <img width="840" alt="esp8226" src="https://user-images.githubusercontent.com/83855713/136765979-b8932571-d4b6-4da0-91a1-9afd915ed501.png">
   
 There are several Arduino microcontrollers (Atmega32u4) with the ESP8266 WiFi module, which can be used to turn itself into a server, or connected to WiFi to turn it into an IoT device.  
   
-<https://ja.aliexpress.com/i/32839674193.html>
+<https://ja.aliexpress.com/i/32839674193.html>  
 
 If you connect this to the Switch, you can control it from outside the house. .... It seems like it could be used for a lot of interesting things. I think this idea has the most potential for development.  
   
