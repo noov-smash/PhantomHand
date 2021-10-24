@@ -217,7 +217,15 @@ When using **CC2640R2F (wireless module)**, the following items should also be s
   
 <img width="840" alt="chrome" src="https://user-images.githubusercontent.com/83855713/136818722-32544371-5d3c-48a3-a5bc-4838e72029b3.png">
 
-
+🪟 WindowsOS Driver Settings  
+It seems that Chrome WebUSB API does not allow WindowsOS users to use WebUSB for devices for which the system driver is provided by the OS.  
+  
+In Windows 10, was able to solve this problem by the following settings.  
+  
+- Install Zadig.  
+- Do Replace Driver with the following settings  
+![windows](https://user-images.githubusercontent.com/83855713/137341955-1cf81b90-a7ee-43fb-9866-f9801bc13322.JPG)  
+  
 ## 🎉 You are now ready!
   
 Here are the instructions for using **PhantomHand**.  
